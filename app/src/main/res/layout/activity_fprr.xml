@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Algoritmos.LTGActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/newThreadButton"
+                android:text="New Thread"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_weight="1"
+                android:text="Start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/changeQuantum"
+                android:text="Change Quantum"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/newQuantum"
+                android:hint="New Quantum"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="Running List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:id="@+id/runningView"
+            android:layout_margin="8dp"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="8dp"
+            android:numColumns="20"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp">
+        </GridView>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="Priority 1 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:id="@+id/readyViewPriority1"
+            android:layout_margin="8dp"
+            android:numColumns="20"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </GridView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="Priority 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:id="@+id/readyViewPriority2"
+            android:layout_margin="8dp"
+            android:numColumns="20"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </GridView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="Priority 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:id="@+id/readyViewPriority3"
+            android:layout_margin="8dp"
+            android:numColumns="20"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </GridView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="Priority 4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:id="@+id/readyViewPriority4"
+            android:layout_margin="8dp"
+            android:numColumns="20"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </GridView>
+
+        <TextView
+            android:id="@+id/textViewFinished"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="Finished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <GridView
+            android:id="@+id/finishedView"
+            android:numColumns="20"
+            android:layout_margin="8dp"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="480dp">
+        </GridView>
+    </LinearLayout>
+</ScrollView>
